@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class TransitionScript : MonoBehaviour
 {
-    public void Nibba()
+    private void Update()
     {
-        StartCoroutine(ChangeScales());
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            StartCoroutine(ChangeScales());
+        }
     }
     public IEnumerator ChangeScales()
     {
@@ -15,7 +18,6 @@ public class TransitionScript : MonoBehaviour
         {
             transform.localScale += new Vector3(0.09F, 0.09F, 0);
             yield return new WaitForSeconds(0.08f);
-
         }
         SceneManager.LoadScene("OpeningCreditsScene");
     }
