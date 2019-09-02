@@ -25,6 +25,7 @@ public class PlayerSprite1 : MonoBehaviour
             else if(Enlarge == false)
             {
                 GameObject.Find("GameManager").GetComponent<GameManager>().Player2 = true;
+            }
         }
         //SceneManager.LoadScene("SecondScene");
 
