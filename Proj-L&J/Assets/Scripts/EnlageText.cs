@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnlageText : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class EnlageText : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Mouse1))
+        if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             GameObject.Find("TransitionSprite").GetComponent<TransitionScript>().Nibba();
         }
@@ -27,5 +28,6 @@ public class EnlageText : MonoBehaviour
             transform.localScale += new Vector3(-0.2F, -0.2F, 0);
             yield return new WaitForSeconds(0.4f);
         }
+        //SceneManager.LoadScene("SecondScene");
     }
 }
