@@ -22,13 +22,13 @@ public class PlayerSprite2 : MonoBehaviour
     {
         if (Enlarge == false && once == true)
         {
-            transform.localScale += new Vector3(-0.5F, -0.5F, 0);
+            transform.localScale += new Vector3(0.5F, 0.5F, 0);
             Enlarge = true;
             once = false;
         }
         if (Enlarge == true && once == true)
         {
-            transform.localScale += new Vector3(0.5F, 0.5F, 0);
+            transform.localScale += new Vector3(-0.5F, -0.5F, 0);
             Enlarge = false;
             once = false;
         }
