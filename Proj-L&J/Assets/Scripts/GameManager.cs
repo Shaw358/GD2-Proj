@@ -15,11 +15,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
-    }
-
-    void Update()
-    {
         //string sceneName = currentScene.name;
 
         //if (sceneName == "Battle")
@@ -33,6 +28,11 @@ public class GameManager : MonoBehaviour
             //Instantiate 2 players
         }
 
-    }*/
+        }*/
+    }
+
+    void Update()
+    {
+
     }
 }

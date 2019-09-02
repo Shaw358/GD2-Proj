@@ -17,7 +17,7 @@ public class TransitionScript : MonoBehaviour
             yield return new WaitForSeconds(0.08f);
 
         }
-        SceneManager.LoadScene("PlayerSelectScene");
+        SceneManager.LoadScene("OpeningCreditsScene");
     }
 
 }
