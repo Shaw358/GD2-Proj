@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TransitionScript : MonoBehaviour
 {
@@ -16,5 +17,7 @@ public class TransitionScript : MonoBehaviour
             yield return new WaitForSeconds(0.08f);
 
         }
+        SceneManager.LoadScene("PlayerSelectScene");
     }
+
 }
