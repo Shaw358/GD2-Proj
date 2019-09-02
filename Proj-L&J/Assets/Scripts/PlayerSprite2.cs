@@ -13,11 +13,6 @@ public class PlayerSprite2 : MonoBehaviour
         Enlarge = false;
     }
 
-    private void Update()
-    {
-        Debug.Log(Enlarge);
-    }
-
     public void changeBool2()
     {
         if (Enlarge == false && once == true)
