@@ -21,7 +21,7 @@ public class Shoot : MonoBehaviour
     void Update()
     {
         Debug.Log(Firepoint);
-        if (Input.GetKey(KeyCode.Space) && canShoot == true)
+        if (Input.GetKeyDown(KeyCode.Space) && canShoot == true)
         {
             StartCoroutine(ShootBullet());
         }
@@ -32,7 +32,7 @@ public class Shoot : MonoBehaviour
         canShoot = false;
         Instantiate(PlayerBullet, Firepoint.position, Firepoint.rotation);
         Instantiate(PlayerBullet, Firepoint1.position, Firepoint1.rotation);
-        yield return new WaitForSeconds(0.01F);
+        yield return new WaitForSeconds(0.1F);
         canShoot = true;
     }
 }
