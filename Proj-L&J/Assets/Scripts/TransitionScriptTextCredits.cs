@@ -18,6 +18,12 @@ public class TransitionScriptTextCredits : MonoBehaviour
         }
     }
 
+    public void Yeet()
+    {
+        StartCoroutine(ChangeScalesPlus());
+    }
+
+
     public IEnumerator ChangeScales()
     {
         for (int i = 0; i < 14; i++)
