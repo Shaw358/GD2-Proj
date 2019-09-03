@@ -35,7 +35,7 @@ public class BossAi : MonoBehaviour
     {
         for (int i = 0; i <= bossHP; i++)
         {
-            GUI.DrawTexture(new Rect(70, 50, 50 * i, 20), HpTexture, ScaleMode.ScaleToFit, false, 1.0F);
+            GUI.DrawTexture(new Rect(70, 50, 60 * i, 30), HpTexture, ScaleMode.ScaleToFit, false, 1.0F);
         }
     }
 }
