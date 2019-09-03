@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
     //Scene currentScene = SceneManager.GetActiveScene();
     public bool Player2 = false;
+
 
     private void Awake()
     {
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        int[] highscore = new int[] {};
         //string sceneName = currentScene.name;
 
         //if (sceneName == "Battle")
@@ -29,6 +32,7 @@ public class GameManager : MonoBehaviour
         }
 
         }*/
+        Debug.Log(highscore);
     }
 
     void Update()

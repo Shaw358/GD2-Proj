@@ -16,4 +16,12 @@ public class PlayerBullet : MonoBehaviour
     {
         transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Boss")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
