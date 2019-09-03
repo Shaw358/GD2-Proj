@@ -30,7 +30,7 @@ public class TextMoving : MonoBehaviour
         yield return new WaitForSeconds(2);
         Wait = false;
         yield return new WaitForSeconds(67);
-        GameObject.Find("Transitions").GetComponent<TransitionScriptTextCredits>().Yeet();
+        GameObject.Find("Transition").GetComponent<TransitionScriptTextCredits>().Yeet();
 
     }
 }
