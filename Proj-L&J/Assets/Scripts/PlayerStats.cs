@@ -16,7 +16,7 @@ public class PlayerStats : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "BulletEnemy" && CanTakeDamage == true)
+        if(collision.gameObject.tag == "EnemyBullet" && CanTakeDamage == true)
         {
             CanTakeDamage = false;
             playerHP -= 1;

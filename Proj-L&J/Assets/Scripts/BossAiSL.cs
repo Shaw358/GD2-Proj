@@ -7,14 +7,8 @@ public class BossAiSL : MonoBehaviour
     [SerializeField] private GameObject Laser;
     [SerializeField] private Transform SLFirepoint;
 
-    private void Start()
-    {
-        FireLaserBurst();
-    }
-
     public void FireLaserBurst()
     {
-        //SLFirepoint = GameObject.Find("BFirePointL").transform;
         StartCoroutine(SPBurst());
     }
 
