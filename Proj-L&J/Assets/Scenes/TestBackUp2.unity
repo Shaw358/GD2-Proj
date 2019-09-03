@@ -793,6 +793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHP: 0
+  DeathAnim: {fileID: 0}
+  ThisGameObject: {fileID: 568160615}
 --- !u!1 &571351081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1392,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HpTexture: {fileID: 2800000, guid: c340c18993e10c94b858066ca19be353, type: 3}
+  fighter: {fileID: 0}
+  solarLaser: {fileID: 0}
+  FirepointFigher1: {fileID: 0}
+  FirepointFigher2: {fileID: 0}
+  FirePointSolar1: {fileID: 0}
+  FirePointSolar2: {fileID: 0}
+  FirePointSolar3: {fileID: 0}
+  FirePointSolar4: {fileID: 0}
+  FirePointSolar5: {fileID: 0}
+  FirePointSolar6: {fileID: 0}
+  FirePointSolar7: {fileID: 0}
+  FirePointSolar8: {fileID: 0}
+  FirePointSolar9: {fileID: 0}
+  FirePointSolar10: {fileID: 0}
 --- !u!114 &819802227
 MonoBehaviour:
   m_ObjectHideFlags: 0
