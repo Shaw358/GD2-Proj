@@ -5,12 +5,7 @@ using UnityEngine;
 public class PlayerBullet : MonoBehaviour
 {
     [SerializeField] private int speed = 10;
-   
-    void Start()
-    {
-        
-    }
-
+  
     // Update is called once per frame
     void Update()
     {

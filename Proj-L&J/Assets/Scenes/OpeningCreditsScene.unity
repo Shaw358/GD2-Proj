@@ -814,8 +814,8 @@ MonoBehaviour:
     Soviets konden niet meer Amerikaanse ruimte missies toestaan. In het geheim heeft
     rusland een militair station in de ruimte gebouwd zodat America geen raketten
     de ruimte meer in kon schieten. \n\nNiet lang geleden hebben wij gehoren gekregen
-    dat de die Sovjets niet meer onder controlle hebben. Niemand weet hoe het is gebeurd
-    en waarom maar het dreigt elke satteliet te vernietigen met een nieuw Russisch
+    dat de Sovjets het station meer onder controlle hebben. Niemand weet hoe gebeurd
+    en waarom, maar het dreigt elke satteliet te vernietigen met een nieuw Russisch
     prototype laser. \n\nAce komt tot redding om te proberen deze monster achtige
     creatie neer te halen en voor eens en altijd te vernietigen..."
   m_isRightToLeft: 0
@@ -887,10 +887,10 @@ MonoBehaviour:
   m_margin: {x: 7.9093966, y: -14.471334, z: 4.923586, w: -2.5589437}
   m_textInfo:
     textComponent: {fileID: 1968282145}
-    characterCount: 614
+    characterCount: 611
     spriteCount: 0
-    spaceCount: 108
-    wordCount: 103
+    spaceCount: 106
+    wordCount: 101
     linkCount: 0
     lineCount: 37
     pageCount: 1
