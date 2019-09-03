@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/RecoverScene.unity
     guid: 9c06529abdb15ea41bfdf96b7263dbfa
   - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
+    guid: dfbe212d5b72a094d96698ce557ba935
+  - enabled: 1
     path: Assets/Scenes/TestBackUp.unity
     guid: 8a753f8a3fa57914e929098e39d194e1
   - enabled: 1

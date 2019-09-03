@@ -5,12 +5,14 @@ using TMPro;
 
 public class ScoreScript : MonoBehaviour
 {
+    public float timer;
     private TextMeshPro TextScore;
     public int score;
     private int playerHP;
     // Start is called before the first frame update
     void Start()
     {
+        timer = 0;
         score = 0;
         TextScore = GetComponent<TextMeshPro>();
     }
@@ -21,6 +23,6 @@ public class ScoreScript : MonoBehaviour
         playerHP = GameObject.Find("Player").GetComponent<PlayerStats>().playerHP;
         score++;
         TextScore.text = "Score: " + score.ToString() + "\n\nPlayer HP: " + playerHP;
-
+        timer += Time.deltaTime;
     }
 }

@@ -13,6 +13,7 @@ public class DeathAnimScript : MonoBehaviour
     private IEnumerator Delete()
     {
         yield return new WaitForSeconds(0.7F);
+        GameObject.Find("Transition").GetComponent<DeadTransition>().StartDeathTransition();
         Destroy(gameObject);
     }
 }
