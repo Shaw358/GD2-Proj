@@ -812,12 +812,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Het is 1982, Amerika heeft pas geleden de 1e man op de maan gezet. \n\nDe
     Soviets konden niet meer Amerikaanse ruimte missies toestaan. In het geheim heeft
-    rusland een militair station in de ruimte gebouwd zodat Amerika geen raketten
-    de ruimte meer in kon schieten. \n\nNiet lang geleden is het ons opgevallen dat
-    de Sovjets het station meer onder controlle hebben. Niemand weet hoe gebeurd en
-    waarom, maar het dreigt elke satteliet te vernietigen met een nieuw Russisch prototype
-    laser. \n\nAce komt tot redding om te proberen deze monster achtige creatie neer
-    te halen en voor eens en altijd te vernietigen..."
+    rusland een militair station in de ruimte gebouwd zodat America geen raketten
+    de ruimte meer in kon schieten. \n\nNiet lang geleden hebben wij gehoren gekregen
+    dat de Sovjets het station meer onder controlle hebben. Niemand weet hoe gebeurd
+    en waarom, maar het dreigt elke satteliet te vernietigen met een nieuw Russisch
+    prototype laser. \n\nAce komt tot redding om te proberen deze monster achtige
+    creatie neer te halen en voor eens en altijd te vernietigen..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a9fed44b4d6d5c4b9ff4dc3499ba90e, type: 2}
   m_sharedMaterial: {fileID: 7685783739707979913, guid: 6a9fed44b4d6d5c4b9ff4dc3499ba90e,
@@ -887,7 +887,7 @@ MonoBehaviour:
   m_margin: {x: 7.9093966, y: -14.471334, z: 4.923586, w: -2.5589437}
   m_textInfo:
     textComponent: {fileID: 1968282145}
-    characterCount: 605
+    characterCount: 611
     spriteCount: 0
     spaceCount: 106
     wordCount: 101
