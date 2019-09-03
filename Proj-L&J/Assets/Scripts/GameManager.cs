@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        int[] highscore = new int[] {};
         //string sceneName = currentScene.name;
 
         //if (sceneName == "Battle")
@@ -32,7 +31,6 @@ public class GameManager : MonoBehaviour
         }
 
         }*/
-        Debug.Log(highscore);
     }
 
     void Update()
