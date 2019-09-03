@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Audiolooper : MonoBehaviour
+public class AudioLooper : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public AudioSource audioData;
+    public AudioSource Loop;
+
     void Start()
     {
-        
+        audioData.Play(0);
+        StartCoroutine(PlayLoop());
+        Debug.Log("started");
     }
-
-    // Update is called once per frame
-    void Update()
+    private IEnumerator PlayLoop()
     {
-        
+        yield return new WaitForSecondsRealtime(64);
+        Loop.Play(0);
     }
 }
