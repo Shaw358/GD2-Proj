@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
+    private Transform Firepoint1;
     private Transform Firepoint;
     private bool canShoot;
 
@@ -13,6 +14,7 @@ public class Shoot : MonoBehaviour
     {
         canShoot = true;
         Firepoint = GameObject.Find("Firepoint").transform;
+        Firepoint1 = GameObject.Find("Firepoint1").transform;
     }
 
     // Update is called once per frame
@@ -29,7 +31,8 @@ public class Shoot : MonoBehaviour
     {
         canShoot = false;
         Instantiate(PlayerBullet, Firepoint.position, Firepoint.rotation);
-        yield return new WaitForSeconds(0.5F);
+        Instantiate(PlayerBullet, Firepoint1.position, Firepoint1.rotation);
+        yield return new WaitForSeconds(0.01F);
         canShoot = true;
     }
 }

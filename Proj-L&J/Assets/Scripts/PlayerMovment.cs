@@ -35,4 +35,4 @@ public class PlayerMovment : MonoBehaviour
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
         }
     }
-}
+  } 
