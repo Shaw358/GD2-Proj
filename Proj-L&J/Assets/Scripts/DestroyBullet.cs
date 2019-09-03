@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBullet : MonoBehaviour
+public class DestroyBullet : MonoBehaviour
 {
     [SerializeField] private int speed = 10;
   
@@ -14,7 +14,7 @@ public class PlayerBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Boss")
+        if(collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Boss" || collision.gameObject.tag == "Player")
         {
             Destroy(gameObject);
         }
