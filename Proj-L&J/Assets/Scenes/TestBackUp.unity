@@ -740,9 +740,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHP: 0
-  DeathAnim: {fileID: 9002708258145637800, guid: daac101fb36e1374b9e7ebcdd62a0a68,
-    type: 3}
-  ThisGameObject: {fileID: 568160615}
 --- !u!1 &571351081
 GameObject:
   m_ObjectHideFlags: 0
@@ -5748,7 +5745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebde450ea1b97644484f94573c6e69b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   score: 0
 --- !u!114 &675658949
 MonoBehaviour:
@@ -6159,11 +6155,7 @@ Transform:
   m_Father: {fileID: 568160615}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &875937094
-=======
---- !u!1 &880921361
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6171,23 +6163,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 875937095}
   m_Layer: 0
   m_Name: BFirePointP1.2
-=======
-  - component: {fileID: 880921364}
-  - component: {fileID: 880921363}
-  - component: {fileID: 880921362}
-  m_Layer: 0
-  m_Name: Transition
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!4 &875937095
 Transform:
   m_ObjectHideFlags: 0
@@ -6251,15 +6234,10 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &911842937
 Transform:
-=======
---- !u!114 &880921362
-MonoBehaviour:
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 911842936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.595, y: 12.534, z: 1.9074898}
@@ -6269,27 +6247,13 @@ MonoBehaviour:
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &911842938
-=======
-  m_GameObject: {fileID: 880921361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69adf0fe24cf95f4fb723dab07f8c046, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!212 &880921363
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 911842936}
   m_Enabled: 0
-=======
-  m_GameObject: {fileID: 880921361}
-  m_Enabled: 1
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6310,11 +6274,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-<<<<<<< HEAD
   m_StitchLightmapSeams: 1
-=======
-  m_StitchLightmapSeams: 0
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6323,42 +6283,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 882ce7781b768504bb4660a5ee5d9406, type: 3}
-=======
-  m_Sprite: {fileID: 21300000, guid: 719e3b04babc1f544ae355a975f91463, type: 3}
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-<<<<<<< HEAD
   m_Size: {x: 9.6, y: 6.4}
-=======
-  m_Size: {x: 9, y: 9}
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
---- !u!4 &880921364
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880921361}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -34.49}
-  m_LocalScale: {x: 0.0004816651, y: 0.0004816651, z: 0.22586}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> fcd6a1890170e2c4ca400221c1cd981bafe72d75
 --- !u!1 &949335579
 GameObject:
   m_ObjectHideFlags: 0
