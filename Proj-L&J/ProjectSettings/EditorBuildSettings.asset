@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 929d768b546be4643bd7728d16e79576
   - enabled: 1
+    path: Assets/Scenes/Test.unity
+    guid: 15a72993e75f9b34ba6d9e487f403397
+  - enabled: 1
     path: Assets/Scenes/OpeningCreditsScene.unity
     guid: 08312f2a72d8f9440a85bdf7171a286f
   - enabled: 1
@@ -23,22 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Highscore.unity
     guid: 56bc4e45f52b2274687fa6e0ceaca8cb
-  - enabled: 1
-    path: Assets/Scenes/Boss.unity
-    guid: 1884ea537c99bc34ea7a17d40498a0e4
-  - enabled: 1
-    path: Assets/Scenes/OpeningMenu.unity
-    guid: f1630cf1bb4f6a743bbec907a63ce7ad
-  - enabled: 1
-    path: Assets/Scenes/RecoverScene.unity
-    guid: 9c06529abdb15ea41bfdf96b7263dbfa
-  - enabled: 1
-    path: Assets/Scenes/DeathScreen.unity
-    guid: dfbe212d5b72a094d96698ce557ba935
-  - enabled: 1
-    path: Assets/Scenes/TestBackUp.unity
-    guid: 8a753f8a3fa57914e929098e39d194e1
-  - enabled: 1
-    path: Assets/Scenes/TestBackUp2.unity
-    guid: cf6a454112175304a97b32b31a02e6e6
   m_configObjects: {}

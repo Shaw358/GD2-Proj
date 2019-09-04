@@ -7,7 +7,6 @@ TagManager:
   - Wall
   - Boss
   - PlayerBullet
-  - EnemyBullet
   layers:
   - Default
   - TransparentFX
