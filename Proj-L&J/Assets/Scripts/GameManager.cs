@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 
     //Scene currentScene = SceneManager.GetActiveScene();
     public bool Player2 = false;
+    public int score;
+    public float timer;
+
 
 
     private void Awake()
@@ -35,6 +38,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        score = GameObject.Find("ScoreText").GetComponent<ScoreScript>().score;
+        Debug.Log(score);
+        timer = GameObject.Find("ScoreText").GetComponent<ScoreScript>().timer;
     }
 }
