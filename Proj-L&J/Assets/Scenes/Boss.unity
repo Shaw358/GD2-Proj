@@ -1111,6 +1111,10 @@ MonoBehaviour:
   FirePointSolar8: {fileID: 1682111866}
   FirePointSolar9: {fileID: 291760508}
   FirePointSolar10: {fileID: 1899706097}
+  timeBetweenEnemyBullet: 0.5
+  timeBetweenWaves: 10
+  EnemyBullet: {fileID: 1194726384673703027, guid: a5b23dbcdcb165042bed323b62c472a9,
+    type: 3}
 --- !u!1 &1839933444
 GameObject:
   m_ObjectHideFlags: 0

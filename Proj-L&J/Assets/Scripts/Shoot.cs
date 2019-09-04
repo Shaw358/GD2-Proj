@@ -20,7 +20,7 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && canShoot == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot == true)
         {
             StartCoroutine(ShootBullet());
         }
