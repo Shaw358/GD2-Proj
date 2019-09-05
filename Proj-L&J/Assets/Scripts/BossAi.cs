@@ -1,11 +1,14 @@
 ﻿using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BossAi : MonoBehaviour
 {
+    public int CAttack;
     private int bossHP;
     private int timesHit;
+    public bool CanShoot;
     [SerializeField] private Texture HpTexture;
 
     [SerializeField] private GameObject fighter;
@@ -43,8 +46,8 @@ public class BossAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        CanShoot = true;
         bossHP = 20;
-        StartCoroutine(SolarLaser());
         canShoot = true;
         BFirePoint1 = GameObject.Find("BFirePoint1").transform;
         BFirePoint2 = GameObject.Find("BFirePoint2").transform;
@@ -55,10 +58,14 @@ public class BossAi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timesHit == 25)
+        if(timesHit >= 25)
         {
             timesHit = 0;
             bossHP -= 1;
+        }
+        if (bossHP<= 0)
+        {
+            SceneManager.LoadScene("OpeningMenu");
         }
         if (countdown <= 0f)
         {
@@ -66,6 +73,11 @@ public class BossAi : MonoBehaviour
             countdown = timeBetweenWaves;
         }
         countdown -= Time.deltaTime;
+        if(CanShoot == true)
+        {
+            StartCoroutine(CanShootSPecialAttack());
+            SpecialAttack();
+        }
     }
 
     void SpawnEnemy()
@@ -81,7 +93,8 @@ public class BossAi : MonoBehaviour
     {
         if(collision.gameObject.tag == "PlayerBullet")
         {
-            timesHit += 1;
+            timesHit += 5;
+            Debug.Log(timesHit);
         }
     }
 
@@ -89,7 +102,7 @@ public class BossAi : MonoBehaviour
     {
         for (int i = 0; i <= bossHP; i++)
         {
-            GUI.DrawTexture(new Rect(70, 50, 50 * i, 20), HpTexture, ScaleMode.ScaleToFit, false, 1.0F);
+            GUI.DrawTexture(new Rect(70, 50, 50 * i, 20), HpTexture, ScaleMode.ScaleToFit, true, 1.0F);
         }
     }
 
@@ -145,6 +158,33 @@ public class BossAi : MonoBehaviour
             SpawnEnemy();
             yield return new WaitForSeconds(timeBetweenEnemyBullet);
         }
-
     }
+
+    private IEnumerator CanShootSPecialAttack()
+    {
+        CanShoot = false;
+        yield return new WaitForSeconds(3.5f);
+        CanShoot = true;
+    }
+
+    void SpecialAttack()
+    {
+        CAttack = Random.Range(1, 4);
+        if (CAttack == 1)
+        {
+            StartCoroutine(SolarLaser());
+            CAttack = 0;
+        }
+        if (CAttack == 2)
+        {
+            LaunchFighter();
+            CAttack = 0;
+        }
+        if (CAttack == 3)
+        {
+            GameObject.Find("BFirePointL").GetComponent<BossAiSL>().FireLaserBurst();
+            CAttack = 0;
+        }
+    }
+
 }

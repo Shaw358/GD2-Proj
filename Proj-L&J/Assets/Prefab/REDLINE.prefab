@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2957029360903543788}
   - component: {fileID: 4962491102831682634}
   - component: {fileID: 8894144013581073761}
+  - component: {fileID: 4761212527313598989}
   m_Layer: 0
   m_Name: REDLINE
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,3 +93,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bbb8e9270a5624b880514f7480d750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &4761212527313598989
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5939741836927785277}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.1, y: 18.75}
+    newSize: {x: 0.1, y: 18.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.049999997, y: -9.375}
+      - {x: 0.049999997, y: -9.375}
+      - {x: 0.049999997, y: 0.035}
+      - {x: -0.049999997, y: 0.035}

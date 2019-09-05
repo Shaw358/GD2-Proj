@@ -12,9 +12,9 @@ public class DestroyBullet : MonoBehaviour
         transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Boss")
+        if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Boss")
         {
             Destroy(gameObject);
         }

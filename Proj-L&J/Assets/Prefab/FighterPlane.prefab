@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3009016626115709268}
-  m_LocalRotation: {x: 0, y: 0, z: -0.21643952, w: 0.97629607}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -0.23, y: 2.059748, z: -0.000016335376}
   m_LocalScale: {x: 4.282221, y: 4.282221, z: 4.282221}
   m_Children: []
   m_Father: {fileID: 3009016626736475662}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -25}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &3009016626648380581
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,6 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a904394dccb349b429053c46c97956bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 1194726384673703027, guid: e67b7a44ca0769d4182b1a2331b25705, type: 3}
+  Bullet: {fileID: 1194726384673703027, guid: a5b23dbcdcb165042bed323b62c472a9, type: 3}
   Firepoint1: {fileID: 3009016626115709269}
   Firepoint2: {fileID: 3009016626648380582}

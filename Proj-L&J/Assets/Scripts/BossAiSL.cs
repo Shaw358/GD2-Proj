@@ -14,8 +14,7 @@ public class BossAiSL : MonoBehaviour
 
     public void FireLaserBurst()
     {
-        //SLFirepoint = GameObject.Find("BFirePointL").transform;
-        //StartCoroutine(SPBurst());
+        StartCoroutine(SPBurst());
     }
 
     public IEnumerator SPBurst()
